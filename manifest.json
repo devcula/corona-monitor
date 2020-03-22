@@ -1,0 +1,20 @@
+{
+  "short_name": "Covid-19 tracker",
+  "name": "Coronavirus Monitor",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 48x48 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
