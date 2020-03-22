@@ -63,13 +63,13 @@ export default function App() {
   return (
     <Router>
       <div>
-        <header>
-          <nav>
-            <Link to="/">
-              <button className="w-50 bg-black-40 pa2 white br2 f3 pointer">Global</button>
+        <header className="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+          <nav className="f6 fw6 ttu tracked">
+            <Link className="link dim white dib mr3" to="/">
+              Global Statistics
             </Link>
-            <Link to="/country">
-              <button className="w-50 bg-black-40 pa2 white br2 f3 pointer">Countries</button>
+            <Link className="link dim white dib mr3" to="/country">
+              Country wise Statistics
             </Link>
           </nav>
         </header>

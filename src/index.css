@@ -12,3 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.component-div{
+  margin-top: 90px;
+}

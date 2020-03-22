@@ -21,7 +21,8 @@ export default function GlobalComponent() {
                 setIsLoading(false);
             });
         }
-    })
+    });
+
     if(isLoading){
         return (
             <Loader loading={isLoading} />
@@ -29,48 +30,50 @@ export default function GlobalComponent() {
     }
     else{
         return (
-            <Scroll>
-                <Card>
-                    <div className="f1">
-                        Total cases
+            <div className="tc component-div">
+                <Scroll>
+                    <Card>
+                        <div className="f1">
+                            Total cases
                     </div>
-                    <div className="f3">
-                        {stats.total_cases}
+                        <div className="f3">
+                            {stats.total_cases}
+                        </div>
+                    </Card>
+                    <Card>
+                        <div className="f1">
+                            Total deaths
                     </div>
-                </Card>
-                <Card>
-                    <div className="f1">
-                        Total deaths
+                        <div className="f3">
+                            {stats.total_deaths}
+                        </div>
+                    </Card>
+                    <Card>
+                        <div className="f1">
+                            Total Recovered
                     </div>
-                    <div className="f3">
-                        {stats.total_deaths}
+                        <div className="f3">
+                            {stats.total_recovered}
+                        </div>
+                    </Card>
+                    <Card>
+                        <div className="f1">
+                            New cases
                     </div>
-                </Card>
-                <Card>
-                    <div className="f1">
-                        Total Recovered
+                        <div className="f3">
+                            {stats.new_cases}
+                        </div>
+                    </Card>
+                    <Card>
+                        <div className="f1">
+                            New Deaths
                     </div>
-                    <div className="f3">
-                        {stats.total_recovered}
-                    </div>
-                </Card>
-                <Card>
-                    <div className="f1">
-                        New cases
-                    </div>
-                    <div className="f3">
-                        {stats.new_cases}
-                    </div>
-                </Card>
-                <Card>
-                    <div className="f1">
-                        New Deaths
-                    </div>
-                    <div className="f3">
-                        {stats.new_deaths}
-                    </div>
-                </Card>
-            </Scroll>
+                        <div className="f3">
+                            {stats.new_deaths}
+                        </div>
+                    </Card>
+                </Scroll>
+            </div>
         )
     }
 }
