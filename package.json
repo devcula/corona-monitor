@@ -31,6 +31,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devcula/corona-monitor"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
