@@ -1,6 +1,6 @@
 {
   "name": "corona-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://devcula.github.io/corona-monitor",
   "private": true,
   "dependencies": {
