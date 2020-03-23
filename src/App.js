@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { HashRouter, Switch, Route, Link} from 'react-router-dom';
 import GlobalComponent from './components/GlobalComponent/GlobalComponent';
 import CountryComponent from './components/CountryComponent/CountryComponent';
 import Footer from './components/FooterComponent/Footer';
@@ -61,7 +61,7 @@ import Footer from './components/FooterComponent/Footer';
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div>
         <header className="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
           <nav className="f6 fw6 ttu tracked">
@@ -84,6 +84,6 @@ export default function App() {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
