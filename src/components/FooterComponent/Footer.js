@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
             <footer className="footer-distributed">
                 <div className="footer-left">
-                    <h3>Covid-19 <span>Monitor</span></h3>
+                    <h3>Corona <span>Monitor</span></h3>
                     <p className="footer-links">
                         <a href="/">Home</a>
                         ·
@@ -43,7 +43,7 @@ const Footer = () => {
                 <div className="footer-right">
                     <p className="footer-company-about">
                         <span>About the website</span>
-                        Made in time of need, this application is being developed for personal use. Made with <FontAwesomeIcon icon={faHeart} title="ReactJS" /> using <strong>ReactJS</strong>.
+                        Made in time of need, this application was developed primarily for personal use. Made with <FontAwesomeIcon icon={faHeart} title="ReactJS" /> using <strong>ReactJS</strong>.
                     </p>
                     <div className="footer-icons">
                         <a href="https://github.com/devcula" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} title="Github" /></a>

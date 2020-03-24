@@ -45,7 +45,7 @@ export default function GlobalComponent() {
                             <div className="f1">
                                 Total cases
                             </div>
-                            <div className="f3">
+                            <div className="f3 circle">
                                 {stats.total_cases}
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export default function GlobalComponent() {
                             <div className="f1">
                                 Total deaths
                             </div>
-                            <div className="f3">
+                            <div className="f3 circle">
                                 {stats.total_deaths}
                             </div>
                         </div>
@@ -65,7 +65,7 @@ export default function GlobalComponent() {
                             <div className="f1">
                                 Total Recovered
                             </div>
-                            <div className="f3">
+                            <div className="f3 circle">
                                 {stats.total_recovered}
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export default function GlobalComponent() {
                             <div className="f1">
                                 New cases
                             </div>
-                            <div className="f3">
+                            <div className="f3 circle">
                                 {stats.new_cases}
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export default function GlobalComponent() {
                             <div className="f1">
                                 New Deaths
                             </div>
-                            <div className="f3">
+                            <div className="f3 circle">
                                 {stats.new_deaths}
                             </div>
                         </div>

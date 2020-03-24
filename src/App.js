@@ -6,6 +6,7 @@ import CountryComponent from './components/CountryComponent/CountryComponent';
 import Footer from './components/FooterComponent/Footer';
 
 export default function App() {
+  // let [ isLoading, setIsLoading ] = React.useState(true);
   return (
     <div>
       <HashRouter basename="/">
@@ -15,14 +16,14 @@ export default function App() {
               <Link className="link dim white dib mr3" to="/">
                 <span className="f3 tc">Global</span>
             </Link>
-              <Link className="link dim white dib mr3" to="/country">
+              <Link className="link dim white dib mr3" to="/countries">
                 <span className="f3 tc">Countries</span>
             </Link>
             </nav>
           </header>
 
           <Switch>
-            <Route path="/country">
+            <Route path="/countries">
               <CountryComponent />
             </Route>
             <Route path="/">

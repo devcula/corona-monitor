@@ -6,9 +6,13 @@
 	text-align: left;
     font: bold 16px sans-serif;
 	padding: 55px 50px;
-	/* margin-top: 80px; */
-	/* position: fixed;
-	bottom: 0px; */
+}
+
+@media only screen and  (min-width: 1300px) and (min-height: 800px){
+	.footer-distributed {
+		position: fixed;
+		bottom: 0;
+	}
 }
 
 .footer-distributed .footer-left,

@@ -37,7 +37,7 @@ export default function CountryList({countries_stat}) {
                                             <td>{country_stat.new_cases}</td>
                                         </tr>
                                         <tr>
-                                            <td className="b f4">Serious/Critical cases:</td>
+                                            <td className="b f4">Critical cases:</td>
                                             <td>{country_stat.serious_critical}</td>
                                         </tr>
                                         <tr>
