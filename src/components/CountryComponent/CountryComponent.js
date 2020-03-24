@@ -1,7 +1,7 @@
 import React from 'react';
-import Loader from '../LoaderComponent/Loader';
 import CountryList from '../CountryListComponent/CountryList';
 import Scroll from '../ScrollComponent/Scroll';
+import Loader from 'react-loader-spinner';
 
 export default function CountryComponent() {
     let [ isLoading, setIsLoading ] = React.useState(true);
@@ -30,7 +30,16 @@ export default function CountryComponent() {
 
     if (isLoading) {
         return (
-            <Loader loading={isLoading} />
+            <div className="component-div tc">
+                <Loader
+                    type="Ball Triangle"
+                    color="#FFFFFF"
+                    height={200}
+                    width={200}
+                    timeout={3000} //3 secs
+
+                />
+            </div>
         )
     }
     else{
