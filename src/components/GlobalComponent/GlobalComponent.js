@@ -2,6 +2,7 @@ import React from 'react';
 import Scroll from '../ScrollComponent/Scroll';
 import Card from '../CardComponent/Card';
 import Loader from 'react-loader-spinner';
+import './GlobalComponent.css';
 
 export default function GlobalComponent() {
     let [ isLoading, setIsLoading ] = React.useState(true);

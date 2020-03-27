@@ -11,7 +11,7 @@ export default function App() {
     <div>
       <HashRouter basename="/">
         <div>
-          <header className="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+          <header className="shadow-5 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
             <nav className="f6 fw6 ttu tracked">
               <Link className="link dim white dib mr3" to="/">
                 <span className="f3 tc">Global</span>
@@ -32,7 +32,9 @@ export default function App() {
           </Switch>
         </div>
       </HashRouter>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

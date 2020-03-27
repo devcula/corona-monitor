@@ -2,6 +2,7 @@ import React from 'react';
 import CountryList from '../CountryListComponent/CountryList';
 import Scroll from '../ScrollComponent/Scroll';
 import Loader from 'react-loader-spinner';
+import './CountryComponent.css';
 
 export default function CountryComponent() {
     let [ isLoading, setIsLoading ] = React.useState(true);
@@ -49,7 +50,7 @@ export default function CountryComponent() {
 
         return (
             <div className="tc component-div">
-                <input className="f3 br-pill tc pa2" type="search" placeholder="Search By Country" onChange={handleSearchChange} />
+                <input className="shadow-5 grow f3 br4-l tc pa2 input-field" type="search" placeholder="Search By Country" onChange={handleSearchChange} />
                 <Scroll>
                     <CountryList countries_stat={stats} />
                 </Scroll>

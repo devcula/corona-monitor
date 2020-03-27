@@ -14,21 +14,11 @@ code {
 }
 
 .component-div{
-  margin-top: 95px;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 479px){
   .component-div{
     margin-top: 80px;
   }
-}
-
-.circle {
-  border: 7px solid white;
-  border-radius: 50%;
-  padding: 20px;
-  border-color: rgb(71, 11, 128);
-  box-shadow: 3px 3px 3px black;
-  margin-top: 10px;
-  background: rgba(0, 0, 0, 0.3) ;
 }

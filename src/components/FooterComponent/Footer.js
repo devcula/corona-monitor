@@ -10,7 +10,7 @@ import { faMapMarkerAlt, faPhone, faEnvelope, faHeart } from '@fortawesome/free-
 const Footer = () => {
     return (
         <div>
-            <footer className="footer-distributed">
+            <footer className="footer-distributed shadow-5">
                 <div className="footer-left">
                     <h3>Corona <span>Monitor</span></h3>
                     <p className="footer-links">
