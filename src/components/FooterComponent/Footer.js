@@ -29,7 +29,7 @@ const Footer = () => {
                 <div className="footer-center">
                     <div>
                         <FontAwesomeIcon className="faIcon" icon={faMapMarkerAlt} />
-                        <p><span>Life Republic Township</span> Pune, India</p>
+                        <p>Pune, India</p>
                     </div>
                     <div>
                         <FontAwesomeIcon className="faIcon" icon={faPhone} />

@@ -1,3 +1,8 @@
 .input-field{
-    border: none;
+    border: 5px solid hsl(208, 100%, 97%);
+    outline: none;
+}
+
+.input-field:focus{
+    border: 5px solid #f0e0ff;
 }

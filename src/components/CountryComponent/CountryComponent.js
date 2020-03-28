@@ -3,9 +3,10 @@ import CountryList from '../CountryListComponent/CountryList';
 import Scroll from '../ScrollComponent/Scroll';
 import Loader from 'react-loader-spinner';
 import './CountryComponent.css';
+import Constants from '../../assets/Constants';
 
 export default function CountryComponent() {
-    let [ isLoading, setIsLoading ] = React.useState(true);
+    let [ apiStatus, setApiStatus ] = React.useState(Constants.LOADING);
     let [ stats, setStats] = React.useState([]);
     let [ searchValue, setSearchValue] = React.useState("");
 
@@ -14,32 +15,49 @@ export default function CountryComponent() {
     }
 
     React.useEffect(() => {
-        if (isLoading) {
+        if (apiStatus === Constants.LOADING) {
             fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php", {
                 headers: {
                     "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-                    "x-rapidapi-key": "4a407207dcmsh645ecf78c9883bdp182f98jsncc654a8c82ef"
+                    "x-rapidapi-key": Constants.KEY
                 }
-            }).then(response => {
-                return response.json();
-            }).then(currentStats => {
+            })
+            .then(response => {
+                if(response.status >= 200 && response.status <= 299){
+                    return response.json();
+                }
+                else{
+                    throw Error(response.statusText);
+                }
+            })
+            .then(currentStats => {
+                setApiStatus(Constants.SUCCESS);
                 setStats(currentStats.countries_stat);
-                setIsLoading(false);
+            })
+            .catch(err => {
+                setApiStatus(Constants.FAILED);
             });
         }
     });
 
-    if (isLoading) {
+    if (apiStatus === Constants.LOADING) {
         return (
             <div className="component-div tc">
                 <Loader
-                    type="Ball Triangle"
+                    type="Audio"
                     color="#FFFFFF"
                     height={200}
                     width={200}
                     timeout={3000} //3 secs
 
                 />
+            </div>
+        )
+    }
+    else if(apiStatus === Constants.FAILED){
+        return (
+            <div className="tc f2 white component-div">
+                Failed to fetch data. Try again after some time...
             </div>
         )
     }
@@ -50,7 +68,7 @@ export default function CountryComponent() {
 
         return (
             <div className="tc component-div">
-                <input className="shadow-5 grow f3 br4-l tc pa2 input-field" type="search" placeholder="Search By Country" onChange={handleSearchChange} />
+                <input className="shadow-5 grow f4 br4 tc pa2 input-field" type="search" placeholder="Search By Country" onChange={handleSearchChange} />
                 <Scroll>
                     <CountryList countries_stat={stats} />
                 </Scroll>

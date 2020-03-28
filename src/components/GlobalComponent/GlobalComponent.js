@@ -3,37 +3,55 @@ import Scroll from '../ScrollComponent/Scroll';
 import Card from '../CardComponent/Card';
 import Loader from 'react-loader-spinner';
 import './GlobalComponent.css';
+import Constants from '../../assets/Constants';
 
 export default function GlobalComponent() {
-    let [ isLoading, setIsLoading ] = React.useState(true);
+    let [apiStatus, setApiStatus] = React.useState(Constants.LOADING);
     let [ stats, setStats] = React.useState({});
 
     React.useEffect( () => {
-        if(isLoading){
+        if(apiStatus === Constants.LOADING){
             fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
                 headers: {
                     "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-                    "x-rapidapi-key": "4a407207dcmsh645ecf78c9883bdp182f98jsncc654a8c82ef"
+                    "x-rapidapi-key": Constants.KEY
                 }
-            }).then(response => {
-                return response.json();
-            }).then(currentStats => {
+            })
+            .then(response => {
+                if (response.status >= 200 && response.status <= 299) {
+                    return response.json();
+                }
+                else {
+                    throw Error(response.statusText);
+                }
+            })
+            .then(currentStats => {
+                setApiStatus(Constants.SUCCESS);
                 setStats(currentStats);
-                setIsLoading(false);
+            })
+            .catch(err => {
+                setApiStatus(Constants.FAILED);
             });
         }
     });
 
-    if(isLoading){
+    if(apiStatus === Constants.LOADING){
         return (
             <div className="component-div tc">
                 <Loader
-                    type="Ball Triangle"
+                    type="Audio"
                     color="#FFFFFF"
                     height={200}
                     width={200}
                     timeout={3000} //3 secs
                 />
+            </div>
+        )
+    }
+    else if(apiStatus === Constants.FAILED){
+        return (
+            <div className="tc component-div white f2">
+                Failed to fetch data. Try again after some time...
             </div>
         )
     }
