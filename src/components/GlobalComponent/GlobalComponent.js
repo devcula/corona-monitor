@@ -4,6 +4,7 @@ import Card from '../CardComponent/Card';
 import Loader from 'react-loader-spinner';
 import './GlobalComponent.css';
 import Constants from '../../assets/Constants';
+import Footer from '../FooterComponent/Footer';
 
 export default function GlobalComponent() {
     let [apiStatus, setApiStatus] = React.useState(Constants.LOADING);
@@ -51,7 +52,9 @@ export default function GlobalComponent() {
     else if(apiStatus === Constants.FAILED){
         return (
             <div className="tc component-div white f2">
-                Failed to fetch data. Try again after some time...
+                <div className="error-div">
+                    {Constants.FETCH_ERROR}
+                </div>
             </div>
         )
     }
@@ -109,6 +112,11 @@ export default function GlobalComponent() {
                             </div>
                         </div>
                     </Card>
+                    <footer>
+                        <div className="footer-div">
+                            <Footer />
+                        </div>
+                    </footer>
                 </Scroll>
             </div>
         )

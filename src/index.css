@@ -17,6 +17,13 @@ code {
   margin-top: 100px;
 }
 
+.error-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
 @media only screen and (max-width: 479px){
   .component-div{
     margin-top: 80px;
