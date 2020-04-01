@@ -3,10 +3,9 @@ import './App.css';
 import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 import GlobalComponent from './components/GlobalComponent/GlobalComponent';
 import CountryComponent from './components/CountryComponent/CountryComponent';
-import Footer from './components/FooterComponent/Footer';
+// import Footer from './components/FooterComponent/Footer';
 
 export default function App() {
-  // let [ isLoading, setIsLoading ] = React.useState(true);
   return (
     <div>
       <HashRouter basename="/">
@@ -32,9 +31,9 @@ export default function App() {
           </Switch>
         </div>
       </HashRouter>
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }
