@@ -10,7 +10,7 @@ export default function CountryList({ countries_stat }) {
                         <Card key={i}>
                             <div className="white">
                                 <div className="tc ma2">
-                                    <img src={country_stat.countryInfo.flag} alt="Country logo" height="64px"/>
+                                    <img src={country_stat.countryInfo.flag} alt="Country logo" height="64px" className="shadow-flag"/>
                                 </div>
                                 <div>
                                     <label className="b f2 tc i">
