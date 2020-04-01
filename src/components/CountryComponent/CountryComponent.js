@@ -17,12 +17,7 @@ export default function CountryComponent() {
 
     React.useEffect(() => {
         if (apiStatus === Constants.LOADING) {
-            fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php", {
-                headers: {
-                    "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-                    "x-rapidapi-key": Constants.KEY
-                }
-            })
+            fetch("https://corona.lmao.ninja/countries/")
             .then(response => {
                 if (response.status >= 200 && response.status <= 299) {
                     return response.json();
@@ -33,7 +28,7 @@ export default function CountryComponent() {
             })
             .then(currentStats => {
                 setApiStatus(Constants.SUCCESS);
-                setStats(currentStats.countries_stat);
+                setStats(currentStats);
             })
             .catch(err => {
                 setApiStatus(Constants.FAILED);
@@ -67,14 +62,15 @@ export default function CountryComponent() {
     else {
         //Filtering based on Searchbox
         if (searchValue) {
-            stats = stats.filter((country) => {
-                return country.country_name.toLowerCase().includes(searchValue.toLowerCase());
+            stats = stats.filter((country_data) => {
+                return country_data.country.toLowerCase().includes(searchValue.toLowerCase());
             });
         }
 
         //Sorting data based on total number of cases
         stats.sort((a, b) => {
-            return (parseInt(b.cases.replace(',', '')) - parseInt(a.cases.replace(',', '')));
+            // return (parseInt(b.cases.replace(',', '')) - parseInt(a.cases.replace(',', '')));
+            return (parseInt(b.cases) - parseInt(a.cases));
         })
 
         return (

@@ -9,9 +9,12 @@ export default function CountryList({ countries_stat }) {
                     return (
                         <Card key={i}>
                             <div className="white">
+                                <div className="tc ma2">
+                                    <img src={country_stat.countryInfo.flag} alt="Country logo" height="64px"/>
+                                </div>
                                 <div>
-                                    <label className="b f3 tc">
-                                        {country_stat.country_name.toUpperCase()}
+                                    <label className="b f2 tc i">
+                                        {country_stat.country}
                                     </label>
                                     <table className="w-100">
                                         <tbody>
@@ -25,23 +28,23 @@ export default function CountryList({ countries_stat }) {
                                             </tr>
                                             <tr>
                                                 <td className="b f4">Recovered:</td>
-                                                <td className="tl">{country_stat.total_recovered}</td>
+                                                <td className="tl">{country_stat.recovered}</td>
                                             </tr>
                                             <tr>
                                                 <td className="b f4">New deaths:</td>
-                                                <td className="tl">{country_stat.new_deaths}</td>
+                                                <td className="tl">{country_stat.todayDeaths}</td>
                                             </tr>
                                             <tr>
                                                 <td className="b f4">New cases:</td>
-                                                <td className="tl">{country_stat.new_cases}</td>
+                                                <td className="tl">{country_stat.todayCases}</td>
                                             </tr>
                                             <tr>
                                                 <td className="b f4">Critical cases:</td>
-                                                <td className="tl">{country_stat.serious_critical}</td>
+                                                <td className="tl">{country_stat.critical}</td>
                                             </tr>
                                             <tr>
                                                 <td className="b f4">Active cases:</td>
-                                                <td className="tl">{country_stat.active_cases}</td>
+                                                <td className="tl">{country_stat.active}</td>
                                             </tr>
                                         </tbody>
                                     </table>

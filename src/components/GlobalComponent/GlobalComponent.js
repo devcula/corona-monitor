@@ -31,6 +31,7 @@ export default function GlobalComponent() {
                 setStats(currentStats);
             })
             .catch(err => {
+                console.log(err);
                 setApiStatus(Constants.FAILED);
             });
         }
