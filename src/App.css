@@ -2,5 +2,6 @@ header{
     z-index: 1;
     position: fixed;
     top: 0;
-    background-color: #292c2f;
+    /* background-color: #292c2f; */
+    background: rgba(0, 0, 0, 0.7);
 }

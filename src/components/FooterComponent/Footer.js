@@ -15,14 +15,12 @@ const Footer = () => {
                     <h3>Corona <span>Monitor</span></h3>
                     <p className="footer-links">
                         <a href="/">Home</a>
-                        ·
+                        ..
                         <a href="/">Blog</a>
-                        ·
+                        ..
                         <a href="/">About</a>
-                        ·
-                        <a href="/">Faq</a>
-                        ·
-                        <a href="/">Contact</a>
+                        ..
+                        <a href="mailto:devcula@outlook.com">Contact</a>
                     </p>
                     <p className="footer-company-name">dEv(uLa &copy; 2020</p>
                 </div>
@@ -43,7 +41,7 @@ const Footer = () => {
                 <div className="footer-right">
                     <p className="footer-company-about">
                         <span>About the website</span>
-                        Made in time of need, this application was developed primarily for personal use. Made with <FontAwesomeIcon icon={faHeart} title="ReactJS" /> using <strong>ReactJS</strong>.
+                        Made in time of need, this application was developed for community use. Made with <FontAwesomeIcon icon={faHeart} title="ReactJS" /> using <strong>ReactJS</strong>.
                     </p>
                     <div className="footer-icons">
                         <a href="https://github.com/devcula" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} title="Github" /></a>
