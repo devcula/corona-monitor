@@ -6,11 +6,22 @@ export default function CountryList({ countries_stat }) {
         <div>
             {
                 countries_stat.map((country_stat, i) => {
+                    let imageUrl = null;
+                    if(country_stat.countryInfo.iso2){
+                        imageUrl = '../../assets/flags/' + country_stat.countryInfo.iso2.toLowerCase() + '.png';
+                    }
+                    else{
+                        imageUrl = '../../assets/flags/unknow.png';
+                    }
                     return (
                         <Card key={i}>
                             <div className="white">
                                 <div className="tc ma2">
-                                    <img src={country_stat.countryInfo.flag} alt="Country logo" height="64px" className="shadow-flag"/>
+                                    <img src={
+                                        country_stat.countryInfo.iso2 == null ? 
+                                        require('../../assets/flags/unknow.png') :
+                                        require(`../../assets/flags/${country_stat.countryInfo.iso2.toLowerCase()}.png`)
+                                    } alt="Country logo" height="64px" className="shadow-flag"/>
                                 </div>
                                 <div>
                                     <label className="b f2 tc i">
