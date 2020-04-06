@@ -1,26 +1,42 @@
 {
   "files": {
     "main.css": "/corona-monitor/static/css/main.dd8c64fb.chunk.css",
-    "main.js": "/corona-monitor/static/js/main.3ba95ace.chunk.js",
-    "main.js.map": "/corona-monitor/static/js/main.3ba95ace.chunk.js.map",
+    "main.js": "/corona-monitor/static/js/main.17566061.chunk.js",
+    "main.js.map": "/corona-monitor/static/js/main.17566061.chunk.js.map",
     "runtime-main.js": "/corona-monitor/static/js/runtime-main.ab5c5644.js",
     "runtime-main.js.map": "/corona-monitor/static/js/runtime-main.ab5c5644.js.map",
     "static/css/2.3b6f1bda.chunk.css": "/corona-monitor/static/css/2.3b6f1bda.chunk.css",
-    "static/js/2.d2f14536.chunk.js": "/corona-monitor/static/js/2.d2f14536.chunk.js",
-    "static/js/2.d2f14536.chunk.js.map": "/corona-monitor/static/js/2.d2f14536.chunk.js.map",
+    "static/js/2.7f7740e7.chunk.js": "/corona-monitor/static/js/2.7f7740e7.chunk.js",
+    "static/js/2.7f7740e7.chunk.js.map": "/corona-monitor/static/js/2.7f7740e7.chunk.js.map",
     "index.html": "/corona-monitor/index.html",
-    "precache-manifest.7946deed3cd8b372d1c00a4fa2432606.js": "/corona-monitor/precache-manifest.7946deed3cd8b372d1c00a4fa2432606.js",
+    "precache-manifest.d5697127afbec869b20ab18bcad3ba55.js": "/corona-monitor/precache-manifest.d5697127afbec869b20ab18bcad3ba55.js",
     "service-worker.js": "/corona-monitor/service-worker.js",
     "static/css/2.3b6f1bda.chunk.css.map": "/corona-monitor/static/css/2.3b6f1bda.chunk.css.map",
     "static/css/main.dd8c64fb.chunk.css.map": "/corona-monitor/static/css/main.dd8c64fb.chunk.css.map",
-    "static/js/2.d2f14536.chunk.js.LICENSE.txt": "/corona-monitor/static/js/2.d2f14536.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/corona-monitor/static/media/background.d134d33e.jpg"
+    "static/js/2.7f7740e7.chunk.js.LICENSE.txt": "/corona-monitor/static/js/2.7f7740e7.chunk.js.LICENSE.txt",
+    "static/media/af.png": "/corona-monitor/static/media/af.8f4b82aa.png",
+    "static/media/aq.png": "/corona-monitor/static/media/aq.91397125.png",
+    "static/media/index.css": "/corona-monitor/static/media/background.d134d33e.jpg",
+    "static/media/bl.png": "/corona-monitor/static/media/bl.1d153b23.png",
+    "static/media/bt.png": "/corona-monitor/static/media/bt.5305595a.png",
+    "static/media/bz.png": "/corona-monitor/static/media/bz.85a3d11d.png",
+    "static/media/ec.png": "/corona-monitor/static/media/ec.c40c8877.png",
+    "static/media/gb-wls.png": "/corona-monitor/static/media/gb-wls.a75a1026.png",
+    "static/media/gs.png": "/corona-monitor/static/media/gs.52c5124f.png",
+    "static/media/io.png": "/corona-monitor/static/media/io.55331127.png",
+    "static/media/mp.png": "/corona-monitor/static/media/mp.f2e03d66.png",
+    "static/media/pe.png": "/corona-monitor/static/media/pe.64341c41.png",
+    "static/media/rs.png": "/corona-monitor/static/media/rs.530704a6.png",
+    "static/media/sm.png": "/corona-monitor/static/media/sm.12256dfd.png",
+    "static/media/tm.png": "/corona-monitor/static/media/tm.f4f2ca89.png",
+    "static/media/va.png": "/corona-monitor/static/media/va.487addb0.png",
+    "static/media/vi.png": "/corona-monitor/static/media/vi.fd186698.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ab5c5644.js",
     "static/css/2.3b6f1bda.chunk.css",
-    "static/js/2.d2f14536.chunk.js",
+    "static/js/2.7f7740e7.chunk.js",
     "static/css/main.dd8c64fb.chunk.css",
-    "static/js/main.3ba95ace.chunk.js"
+    "static/js/main.17566061.chunk.js"
   ]
 }
