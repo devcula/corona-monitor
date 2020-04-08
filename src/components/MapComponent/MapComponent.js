@@ -142,12 +142,16 @@ function MapComponent() {
                             ? `<img src="https://www.countryflags.io/${countryISO}/shiny/64.png"></img>`
                             : "";
 
-                        const HTML = `<p>Country: <b>${country}</b></p>
-              ${provinceHTML}
-              <p>Cases: <b>${cases}</b></p>
-              <p>Deaths: <b>${deaths}</b></p>
-              <p>Mortality Rate: <b>${mortalityRate}%</b></p>
-              ${countryFlagHTML}`;
+                        const HTML = `
+                        <div class="tc">
+                        <p>Country: <b>${country}</b></p>
+                        ${provinceHTML}
+                        <p>Cases: <b>${cases}</b></p>
+                        <p>Deaths: <b>${deaths}</b></p>
+                        <p>Mortality Rate: <b>${mortalityRate}%</b></p>
+                        ${countryFlagHTML}
+                        <div>
+                        `;
 
                         // Ensure that if the map is zoomed out such that multiple
                         // copies of the feature are visible, the popup appears
