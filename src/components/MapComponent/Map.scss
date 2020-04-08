@@ -3,10 +3,8 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    // overflow: hidden;
 }
 
-/*  Make our map take the full viewport - 100% */
 #root,
 .MapComponent,
 .mapContainer,
@@ -15,7 +13,6 @@ body {
     height: 100%;
 }
 
-/* Tooltip code */
 .mapboxgl-popup {
     font-family: "Baloo Thambi 2", cursive;
     font-size: 10px;
