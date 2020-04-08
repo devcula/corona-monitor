@@ -14,7 +14,7 @@ code {
 }
 
 .component-div{
-  margin-top: 100px;
+  margin-top: 92px;
 }
 
 .error-div {
@@ -26,7 +26,7 @@ code {
 
 @media only screen and (max-width: 479px){
   .component-div{
-    margin-top: 80px;
+    margin-top: 60px;
   }
 }
 

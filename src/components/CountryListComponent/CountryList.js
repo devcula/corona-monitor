@@ -10,7 +10,11 @@ export default function CountryList({ countries_stat }) {
                         <Card key={i}>
                             <div className="white">
                                 <div className="tc ma2">
-                                    <img src={country_stat.countryInfo.flag} alt="Country logo" height="64px" className="shadow-flag"/>
+                                    <img src={
+                                        country_stat.countryInfo.iso2 == null ? 
+                                        require('../../assets/flags/unknow.png') :
+                                        require(`../../assets/flags/${country_stat.countryInfo.iso2.toLowerCase()}.png`)
+                                    } alt="Country logo" height="64px" className="shadow-flag"/>
                                 </div>
                                 <div>
                                     <label className="b f2 tc i">
