@@ -47,7 +47,7 @@ function MapComponent() {
             const map = new mapboxgl.Map({
                 container: mapboxElRef.current,
                 style: "mapbox://styles/mapbox/dark-v10",
-                center: [16, 27], // initial geo location
+                center: [78.96288, 20.593684], // initial geo location
                 zoom: 2 // initial zoom
             });
             // Add navigation controls to the top right of the canvas
