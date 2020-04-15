@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5dc8422669f3cea5549740ba0dbcb189",
+    "revision": "01b65de6bf0d0b52e96c5a3d03bb9bac",
     "url": "/corona-monitor/index.html"
   },
   {
-    "revision": "472e95be7b4fca6e761c",
+    "revision": "f5aa944d3d056a4e7976",
     "url": "/corona-monitor/static/css/2.cc848439.chunk.css"
   },
   {
-    "revision": "d07cfae0acc173e92bbb",
-    "url": "/corona-monitor/static/css/main.48703178.chunk.css"
+    "revision": "7c0079f845a50459e9d8",
+    "url": "/corona-monitor/static/css/main.e210e219.chunk.css"
   },
   {
-    "revision": "472e95be7b4fca6e761c",
-    "url": "/corona-monitor/static/js/2.9beea8c5.chunk.js"
+    "revision": "f5aa944d3d056a4e7976",
+    "url": "/corona-monitor/static/js/2.60932da8.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/corona-monitor/static/js/2.9beea8c5.chunk.js.LICENSE.txt"
+    "url": "/corona-monitor/static/js/2.60932da8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d07cfae0acc173e92bbb",
-    "url": "/corona-monitor/static/js/main.b96f5de8.chunk.js"
+    "revision": "7c0079f845a50459e9d8",
+    "url": "/corona-monitor/static/js/main.15de3777.chunk.js"
   },
   {
     "revision": "2b67d12029d853cdc3a1",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "913971256fc6daeefc81eb97c4849f3f",
     "url": "/corona-monitor/static/media/aq.91397125.png"
-  },
-  {
-    "revision": "d134d33ec41d98b7449901b514820cca",
-    "url": "/corona-monitor/static/media/background.d134d33e.jpg"
   },
   {
     "revision": "1d153b2310b64f40acc701b0cfbe5f99",
