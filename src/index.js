@@ -9,7 +9,6 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <MapComponent /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
