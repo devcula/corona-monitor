@@ -1,16 +1,16 @@
-##Corona Monitor
+## Corona Monitor
 A progressive web application to monitor the worldwide situation of Coronavirus.
 
-#Data Source used [https://corona.lmao.ninja/](https://corona.lmao.ninja/)
+# Data Source used [https://corona.lmao.ninja/](https://corona.lmao.ninja/)
 
-#Documentation for the api available [here](https://corona.lmao.ninja/docs/)
+# Documentation for the api available [here](https://corona.lmao.ninja/docs/)
 
-##Screenshots
-[Global Statistics](./global.png)
+## Screenshots
+![Global Statistics](./global.png)
 
-[Countrywise Statistics](./Countries.png)
+![Countrywise Statistics](./Countries.png)
 
-[World Map](./Map.png)
+![World Map](./Map.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
