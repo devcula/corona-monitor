@@ -1,11 +1,11 @@
-## Corona Monitor
+# Corona Monitor
 A progressive web application to monitor the worldwide situation of Coronavirus.
 
-# Data Source used [https://corona.lmao.ninja/](https://corona.lmao.ninja/)
+## Data Source used [https://corona.lmao.ninja/](https://corona.lmao.ninja/)
 
-# Documentation for the api available [here](https://corona.lmao.ninja/docs/)
+## Documentation for the api available [here](https://corona.lmao.ninja/docs/)
 
-## Screenshots
+# Screenshots
 ![Global Statistics](./global.png)
 
 ![Countrywise Statistics](./Countries.png)
