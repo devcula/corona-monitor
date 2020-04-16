@@ -17,7 +17,7 @@ export default function CountryComponent() {
 
     React.useEffect(() => {
         if (apiStatus === Constants.LOADING) {
-            fetch("https://corona.lmao.ninja/countries/")
+            fetch("https://corona.lmao.ninja/v2/countries/")
             .then(response => {
                 if (response.status >= 200 && response.status <= 299) {
                     return response.json();
@@ -28,6 +28,11 @@ export default function CountryComponent() {
             })
             .then(currentStats => {
                 setApiStatus(Constants.SUCCESS);
+                //Sorting data based on total number of cases
+                currentStats.sort((a, b) => {
+                    // return (parseInt(b.cases.replace(',', '')) - parseInt(a.cases.replace(',', '')));
+                    return (parseInt(b.cases) - parseInt(a.cases));
+                })
                 setStats(currentStats);
             })
             .catch(err => {
@@ -66,13 +71,6 @@ export default function CountryComponent() {
                 return country_data.country.toLowerCase().includes(searchValue.toLowerCase());
             });
         }
-
-        //Sorting data based on total number of cases
-        stats.sort((a, b) => {
-            // return (parseInt(b.cases.replace(',', '')) - parseInt(a.cases.replace(',', '')));
-            return (parseInt(b.cases) - parseInt(a.cases));
-        })
-
         return (
             <div className="tc component-div">
                 <input className="shadow-5 grow f4 br4 tc pa2 input-field" type="search" placeholder="Search By Country" onChange={handleSearchChange} />
@@ -83,11 +81,11 @@ export default function CountryComponent() {
                         </div> :
                         <Scroll>
                             <CountryList countries_stat={stats} />
+                            <footer>
+                                <Footer updated={stats[0].updated}/>
+                            </footer>
                         </Scroll>
                 }
-                <footer>
-                    <Footer />
-                </footer>
             </div>
         )
     }

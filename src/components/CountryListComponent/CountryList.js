@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../CardComponent/Card';
+import './CountryList.css';
 
 export default function CountryList({ countries_stat }) {
     return (
@@ -17,10 +18,10 @@ export default function CountryList({ countries_stat }) {
                                     } alt="Country logo" height="64px" className="shadow-flag"/>
                                 </div>
                                 <div>
-                                    <label className="b f2 tc i">
+                                    <label className="b f2 tc i country_text">
                                         {country_stat.country}
                                     </label>
-                                    <table className="w-100">
+                                    <table className="w-100 country_table">
                                         <tbody>
                                             <tr>
                                                 <td className="b f4">Total cases:</td>

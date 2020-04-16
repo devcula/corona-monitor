@@ -12,12 +12,7 @@ export default function GlobalComponent() {
 
     React.useEffect( () => {
         if(apiStatus === Constants.LOADING){
-            fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
-                headers: {
-                    "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-                    "x-rapidapi-key": Constants.KEY
-                }
-            })
+            fetch("https://corona.lmao.ninja/v2/all")
             .then(response => {
                 if (response.status >= 200 && response.status <= 299) {
                     return response.json();
@@ -69,7 +64,7 @@ export default function GlobalComponent() {
                                 Total cases
                             </div>
                             <div className="f3 circle">
-                                {stats.total_cases}
+                                {stats.cases}
                             </div>
                         </div>
                     </Card>
@@ -79,7 +74,7 @@ export default function GlobalComponent() {
                                 Total deaths
                             </div>
                             <div className="f3 circle">
-                                {stats.total_deaths}
+                                {stats.deaths}
                             </div>
                         </div>
                     </Card>
@@ -89,7 +84,7 @@ export default function GlobalComponent() {
                                 Total Recovered
                             </div>
                             <div className="f3 circle">
-                                {stats.total_recovered}
+                                {stats.recovered}
                             </div>
                         </div>
                     </Card>
@@ -99,7 +94,7 @@ export default function GlobalComponent() {
                                 New cases
                             </div>
                             <div className="f3 circle">
-                                {stats.new_cases}
+                                {stats.todayCases}
                             </div>
                         </div>
                     </Card>
@@ -109,13 +104,33 @@ export default function GlobalComponent() {
                                 New Deaths
                             </div>
                             <div className="f3 circle">
-                                {stats.new_deaths}
+                                {stats.todayDeaths}
+                            </div>
+                        </div>
+                    </Card>
+                    <Card>
+                        <div className="white">
+                            <div className="f1">
+                                Critical Cases
+                            </div>
+                            <div className="f3 circle">
+                                {stats.critical}
+                            </div>
+                        </div>
+                    </Card>
+                    <Card>
+                        <div className="white">
+                            <div className="f1">
+                                Affected Countries
+                            </div>
+                            <div className="f3 circle">
+                                {stats.affectedCountries}
                             </div>
                         </div>
                     </Card>
                     <footer>
                         <div className="footer-div">
-                            <Footer />
+                            <Footer updated={stats.updated}/>
                         </div>
                     </footer>
                 </Scroll>

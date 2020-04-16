@@ -7,22 +7,20 @@ import { faInstagram,
     faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faPhone, faEnvelope, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-const Footer = () => {
+const Footer = ({updated}) => {
+    let updatedInMins = Math.floor((new Date().getTime() - updated) / 60000);
     return (
         <div>
             <footer className="footer-distributed shadow-5">
                 <div className="footer-left">
                     <h3>Corona <span>Monitor</span></h3>
                     <p className="footer-links">
-                        <a href="/">Home</a>
-                        ..
-                        <a href="/">Blog</a>
-                        ..
-                        <a href="/">About</a>
-                        ..
-                        <a href="mailto:devcula@outlook.com">Contact</a>
+                        Data last updated: {isNaN(updatedInMins) ? "Not available" : `${updatedInMins} mins ago`}
                     </p>
-                    <p className="footer-company-name">dEv(uLa &copy; 2020</p>
+                    <p className="footer-company-name">
+                        MIT Licensed
+                    </p>
+                    <p className="footer-company-name">Copyright &copy; 2020 Abhishek Prasad</p>
                 </div>
                 <div className="footer-center">
                     <div>
