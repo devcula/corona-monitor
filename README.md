@@ -1,6 +1,8 @@
 # Corona Monitor
 A progressive web application to monitor the worldwide situation of Coronavirus.
 
+## Checkout the live Demo [here](https://devcula.github.io/corona-monitor)
+
 ## Data Source used [https://corona.lmao.ninja/](https://corona.lmao.ninja/)
 
 ## Documentation for the api available [here](https://corona.lmao.ninja/docs/)
