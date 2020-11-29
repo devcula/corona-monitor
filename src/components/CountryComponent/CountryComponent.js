@@ -73,7 +73,7 @@ export default function CountryComponent() {
         }
         return (
             <div className="tc component-div">
-                <input className="shadow-5 grow f4 br4 tc pa2 input-field" type="search" placeholder="Search By Country" onChange={handleSearchChange} />
+                <input className="shadow-5 grow f4 br2 ma2 tc pa2 input-field" type="search" placeholder="Search" onChange={handleSearchChange} />
                 {
                     stats.length === 0 ?
                         <div className="f2 white ma4">

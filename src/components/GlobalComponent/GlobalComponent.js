@@ -22,8 +22,8 @@ export default function GlobalComponent() {
                 }
             })
             .then(currentStats => {
-                setApiStatus(Constants.SUCCESS);
                 setStats(currentStats);
+                setApiStatus(Constants.SUCCESS);
             })
             .catch(err => {
                 console.log(err);
@@ -60,71 +60,71 @@ export default function GlobalComponent() {
                 <Scroll>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 Total cases
                             </div>
-                            <div className="f3 circle">
-                                {stats.cases}
+                            <div className="f3 circle b">
+                                {stats.cases.toLocaleString()}
                             </div>
                         </div>
                     </Card>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 Total deaths
                             </div>
-                            <div className="f3 circle">
-                                {stats.deaths}
+                            <div className="f3 circle b">
+                                {stats.deaths.toLocaleString()}
                             </div>
                         </div>
                     </Card>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 Total Recovered
                             </div>
-                            <div className="f3 circle">
-                                {stats.recovered}
+                            <div className="f3 circle b">
+                                {stats.recovered.toLocaleString()}
                             </div>
                         </div>
                     </Card>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 New cases
                             </div>
-                            <div className="f3 circle">
-                                {stats.todayCases}
+                            <div className="f3 circle b">
+                                {stats.todayCases.toLocaleString()}
                             </div>
                         </div>
                     </Card>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 New Deaths
                             </div>
-                            <div className="f3 circle">
-                                {stats.todayDeaths}
+                            <div className="f3 circle b">
+                                {stats.todayDeaths.toLocaleString()}
                             </div>
                         </div>
                     </Card>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 Critical Cases
                             </div>
-                            <div className="f3 circle">
-                                {stats.critical}
+                            <div className="f3 circle b">
+                                {stats.critical.toLocaleString()}
                             </div>
                         </div>
                     </Card>
                     <Card>
                         <div className="white">
-                            <div className="f1">
+                            <div className="f2">
                                 Affected Countries
                             </div>
-                            <div className="f3 circle">
-                                {stats.affectedCountries}
+                            <div className="f3 circle b">
+                                {stats.affectedCountries.toLocaleString()}
                             </div>
                         </div>
                     </Card>

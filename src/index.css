@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to right, #141e30, #243b55);
@@ -13,7 +14,7 @@ code {
     monospace;
 }
 
-.component-div{
+.component-div {
   margin-top: 92px;
 }
 
@@ -24,8 +25,8 @@ code {
   height: 60vh;
 }
 
-@media only screen and (max-width: 479px){
-  .component-div{
+@media only screen and (max-width: 479px) {
+  .component-div {
     margin-top: 60px;
   }
 }

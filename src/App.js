@@ -24,7 +24,7 @@ export default function App() {
       <Particles params={particlesOptions} className="particles" />
       <HashRouter basename="/">
           <header className="shadow-5 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
-            <nav className="f6 fw6 ttu tracked">
+            <nav className="f4 b fw6 tracked">
               <Link className="link dim white dib mr3" to="/">
                 <span className="f3 tc">Global</span>
               </Link>

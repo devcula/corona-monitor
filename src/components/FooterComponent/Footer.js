@@ -10,7 +10,7 @@ import { faMapMarkerAlt, faPhone, faEnvelope, faHeart } from '@fortawesome/free-
 const Footer = ({updated}) => {
     let updatedInMins = Math.floor((new Date().getTime() - updated) / 60000);
     return (
-        <div>
+        <div style={{marginTop: '20px'}}>
             <footer className="footer-distributed shadow-5">
                 <div className="footer-left">
                     <h3>Corona <span>Monitor</span></h3>

@@ -28,7 +28,7 @@ function MapComponent() {
                         id: index,
                         country: point.country,
                         province: point.province,
-                        cases: point.stats.confirmed,
+                        cases: point.stats.confirmed - (point.stats.deaths + point.stats.recovered),
                         deaths: point.stats.deaths
                     }
                 }))
@@ -128,7 +128,7 @@ function MapComponent() {
                         <div class="tc">
                         <p>Country: <b>${country}</b></p>
                         ${provinceHTML}
-                        <p>Cases: <b>${cases}</b></p>
+                        <p>Active Cases: <b>${cases}</b></p>
                         <p>Deaths: <b>${deaths}</b></p>
                         <p>Mortality Rate: <b>${mortalityRate}%</b></p>
                         ${countryFlagHTML}
